@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main__heroes {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 2em;
+}
+
+h1 {
+  color: #c4c4c4;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 6px;
+}
+.heroes__container {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.heroe__container {
+  background-color: #e5e5e5;
+  padding: 6px 12px;
+  width: 300px;
+  box-shadow: 0 0 10px #e5e5e5;
+}
+
+.heroe__container img {
+  width: 250px;
+  height: 200px;
+  box-shadow: 0 0 10px #1c1c1c;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.heroe__container li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.heroe__container li:last-child {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+.heroe__container ul {
+  padding: 0;
+  margin: 0;
+}
+
+.heroe__container a {
+  color: #1c1c1c;
+}
+
+.heroe__container h3 {
+  font-size: 2em;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hero-details {
+  background-color: #1c1c1c;
+  height: 100vh;
+}
+
+.hero-details h1 {
+  text-align: center;
+  padding-top: 2em;
+  font-size: 2em;
+}
+
+.heroe-details__container {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  align-items: center;
+  height: 100%;
+}
+
+.heroe-details__info {
+  color: #e5e5e5;
+  line-height: 1.5em;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroe-details__container img {
+  border-radius: 6px;
+  width: 400px;
+  box-shadow: 0 0 10px #c4c4c4;
+}
+
+.heroe-details__info li {
+  list-style: none;
+}
+
+.heroe-details__info ul {
+  margin-bottom: 24px;
+}
+
+.heroe-details__info h1 {
+  text-decoration: underline;
+  margin-bottom: 24px;
+}
+
+.heroe-details__info h3,
+.heroe-details__info h4 {
+  font-weight: 300;
+}
+
+.back-btn {
+  font-size: 1.3em;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  padding: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #c4c4c4;
+  text-shadow: 0 0 10px #c4c4c4;
+  text-transform: uppercase;
+}
+
+.back-btn:hover {
+  color: #1c1c1c;
+  background-color: #c4c4c4;
+  text-shadow: 0 0 10px #1c1c1c;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/css/index.css">
+  <title><%=heroe.superhero%> | Detalles</title>
+</head>
+<body>
+  <section class="hero-details">
+  <article class="heroe-details__container">
+    <img src="/img/<%=heroe.id%>.jpg" alt="<%= heroe.superhero %>">
+    <div class="heroe-details__info">
+    <h1><%=heroe.superhero%></h1>
+    <h3>Editor: <%=heroe.publisher%></h3>
+    <h4>Info del personaje</h4>
+    <ul>
+      <li>Editor: <%=heroe.publisher%></li>
+      <li>Alter ego: <%=heroe.alter_ego%></li>
+      <li>Primera aparición: <%=heroe.first_appearance%></li>
+      <li>Personajes: <%=heroe.characters%></li>
+    </ul>
+    <a href="/" class="back-btn">Volver al home</a>
+    </div>
+  </article>
+</section>
+</body>
+</html>

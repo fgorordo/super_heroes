@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/css/index.css">
+  <title>Clase Super Secreta Express</title>
+</head>
+<body>
+  <section class="main__heroes">
+  <h1>Heroes APP</h1>
+  <article class="heroes__container">
+  <%for(let heroe of heroes) { %>
+    <article class="heroe__container">
+      <h3><a href="/detalle/<%=heroe.id%>"><%=heroe.superhero %></a></h3>
+      <img src="/img/<%=heroe.id%>.jpg" alt="heroe">
+      <ul>
+        <li><a href="/publisher/<%=heroe.publisher.split(" ").join("-").toLowerCase()%>"><%=heroe.publisher%></a></li>
+        <li><%=heroe.alter_ego %></li>
+      </ul>
+    </article>
+  <%} %>
+  </article>
+</section>
+</body>
+</html>
